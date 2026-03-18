@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number-Guessing-Game</title>
+
+    <link rel="shortcut icon" href="/assets/icon-1976100_1920.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+
+<body darkmode="off">
+
+
+    <header>
+
+
+
+    <h1 class="headline">Number-Guessing-Game</h1>
+
+     <button id="theme-toggle" class="mode-toggle">
+
+            <span>
+
+                <img src="./assets/Sun.svg">
+                <img src="./assets/Moon.svg">
+
+            </span>
+
+        </button>
+
+    </header>
+
+
+    <main>
+ 
+  
+
+
+<section class="container">
+
+     <h1 id="headline">Bitte rate die Zahl!</h1>
+
+ <h2 id="displayTries">Versuche:0</h2>
+
+ <form onsubmit="guessTheNumber();  return false">
+
+ <input id="myNumber" type="number" required placeholder="Bitte Zahl eingeben">
+
+ <button>Raten!</button>
+
+ </form>     
+
+</section>
+
+<section class="container">
+
+<a href="changelog.html"><button>Changelog ansehen</button></a>
+
+</section>
+
+
+
+
+
+
+    </main>
+
+       <footer>
+
+<p>2013-2026 Ich halt!</p>
+
+       </footer>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

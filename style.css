@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+body {
+    min-height: 100vh;    
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+ body[darkmode="on"] header{
+    padding: 32px;
+    background-color: #232227;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+ body[darkmode="off"] header{
+    padding: 32px;
+    background-color: #c2c2c2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ body[darkmode="on"] footer{
+    padding: 32px;
+    background-color: #232227;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+ body[darkmode="off"] footer{
+    padding: 32px;
+    background-color: #c2c2c2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body[darkmode="on"] p{
+    color: white;
+}
+
+body[darkmode="off"] p{
+    color: black;
+}
+
+main {
+    flex: 1;
+    padding: 16px;
+    background-color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.mode-toggle {
+    border: none;
+    padding: 4px;
+    width: 100px;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 14px;
+}
+
+body[darkmode="off"] .mode-toggle {
+    background: linear-gradient(90deg, #fba53a 0%, #fce047 100%); 
+}
+body[darkmode="on"] .mode-toggle {
+    background: linear-gradient(90deg, #00487a 0%, #26a2e0 100%);
+}
+
+.mode-toggle>span {
+    position: relative;
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    background-color: white;
+    box-shadow: 0px 1px 1px rgba(3, 7, 18, 0.06),
+            0px 2px 5px rgba(3, 7, 18, 0.12),
+            0px 5px 12px rgba(3, 7, 18, 0.18),
+            0px 10px 20px rgba(3, 7, 18, 0.24),
+            0px 15px 32px rgba(3, 7, 18, 0.30);
+    left: 0;
+    transition: all 300ms ease-in-out;
+}
+
+body[darkmode="on"] .mode-toggle>span {
+    left: 100%;
+    transform: translateX(-100%);
+}
+
+.mode-toggle>span>img {
+    width: 24px;
+    height: 24px;
+
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    transition: all 300ms ease-in-out;
+}
+
+body[darkmode="on"] .mode-toggle>span>img:nth-child(1) {
+    opacity: 0;
+}
+body[darkmode="on"] .mode-toggle>span>img:nth-child(2) {
+    opacity: 1;
+}
+
+body[darkmode="off"] .mode-toggle>span>img:nth-child(1) {
+    opacity: 1;
+    transform: rotate(60deg);
+}
+body[darkmode="off"] .mode-toggle>span>img:nth-child(2) {
+    opacity: 0;
+    transform: rotate(60deg);
+}
+
+body[darkmode="on"] main{
+    background-color: #333;
+}
+
+.container {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    background-color: #fff;
+    transition: background-color 0.5s, color 0.5s, box-shadow 0.5s;
+        margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+body[darkmode="on"] .container {
+    background-color: #222;
+    color: #eee;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+        margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+ input {
+    padding: 12px 16px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: background-color 0.5s, border-color 0.5s, color 0.5s;
+}
+
+
+body[darkmode="on"] input {
+    background-color: #333;
+    border-color: #555;
+    color: #eee;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #0077cc;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #005fa3;
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+}
