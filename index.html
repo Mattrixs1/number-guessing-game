@@ -1,89 +1,46 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Number-Guessing-Game</title>
-
+    <title>Start Menu</title>    
     <link rel="shortcut icon" href="/assets/icon-1976100_1920.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-
-
 </head>
-
-
-<body darkmode="off">
-
-
-    <header>
-
-
-
-    <h1 class="headline">Number-Guessing-Game</h1>
-
-
-
-
-
-
-<!--
-
-        <select id="page-navigator" onchange="window.location.href=this.value;">
-  <option value="" disabled selected>Ziel auswählen...</option>
-  <option value="example.com">HTML Kurs</option>
-  <option value="example.com">CSS Kurs</option>
-  <option value="example.com">JavaScript Kurs</option>
-</select>
-
--->
-
-    </header>
-
-
-    <main>
+<body darkmode="off">    
+    <header>    
+        <h1 class="headline">Number-Guessing-Game</h1>     
  
-  
+    </header>    
+    <main>
+        <section class="container">  
+
+            <h1 id="headline">Wähle ein Level</h1>
 
 
-<section class="container">
+            <button id="lvl1-btn" onclick="navigateToLevel(1)">LVL 1(1-10 Tutorial)</button>
+            <button id="lvl2-btn" onclick="navigateToLevel(2)">LVL 2(1-100 Sehr einfach)</button>
 
-<h4>Lvl 1</h4>
 
-     <h1 id="headline">Bitte rate die Zahl!</h1>
+        </section>
 
- <h2 id="displayTries">Versuche:0</h2>
+        <section class="container"><a href="settings.html"><button><img src="/assets/settings-gear.svg"></button></a></section>
 
- <form onsubmit="guessTheNumber();  return false">
-
- <input id="myNumber" type="number" required placeholder="Bitte Zahl eingeben">
-
- <button>Raten!</button>
-
- </form>     
 
 </section>
-
-
-
-<section class="container">
-
-<a href="start-menu.html"><button>Zurück zum Startmenü</button></a>
-
-</section>
-
-
 
     </main>
 
-       <footer>
+    <footer>
+        <p>2013-2026 Ich halt!</p>
+    </footer>
 
-<p>2013-2026 Ich halt!</p>
+    <!-- Loading Animation Overlay -->
+    <div id="loading-overlay" class="loading-overlay hidden">
 
-       </footer>
+        <div class="spinner"></div>
+    </div>
 
+    <script src="script.js"></script>
 </body>
-
-<script src="script.js"></script>
-
 </html>
