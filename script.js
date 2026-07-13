@@ -70,7 +70,7 @@ function navigateToLevel(level) {
     
     setTimeout(() => {
         const levelPages = {
-            1: 'index.html',
+            1: 'level1.html',
             2: 'level2.html',
             3: 'level3.html',
             4: 'level4.html',
