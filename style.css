@@ -48,10 +48,12 @@ body {
 
 body[darkmode="on"] p{
     color: white;
+    margin-bottom: 15px;
 }
 
 body[darkmode="off"] p{
     color: black;
+    margin-bottom: 15px;
 }
 
 main {
@@ -193,8 +195,10 @@ body[darkmode="on"] input {
 button {
     width: 100%;
     padding: 14px;
-    padding-right: 0px;
+    padding-right: auto;
     margin-top: 10px;
+    margin-bottom: 20px;
+
     font-size: 1rem;
     border: none;
     border-radius: 6px;
@@ -210,6 +214,14 @@ button:hover {
 
 a {
     text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body[darkmode="on"] a {
     color: white;
 }
 
@@ -220,13 +232,9 @@ a {
 
 h3 {
     text-decoration: underline;
+    margin-bottom: 20px;
 }
 
-img {
-    height: 50px;
-    width: 50px;
-    margin-right: 20px;
-}
 
 
   .overlay {
@@ -326,4 +334,245 @@ select:focus {
   color: white;
   font-size: 1.2rem;
   font-weight: 600;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.img {
+    height: 50px;
+    width: 50px;
+}
+
+
+
+/* ==========================
+   ACHIEVEMENTS
+========================== */
+
+
+.achievement-container{
+
+    width:100%;
+
+    margin-top:30px;
+
+}
+
+
+.achievement-container h2{
+
+    text-align:center;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.achievement{
+
+
+    width:90%;
+
+    padding:15px;
+
+    margin:10px auto;
+
+    border-radius:12px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:5px;
+
+    font-size:18px;
+
+    transition:.4s;
+
+
+}
+
+
+
+.achievement span{
+
+    font-size:14px;
+
+    opacity:.7;
+
+}
+
+
+
+.locked{
+
+    background:#555;
+
+    color:#aaa;
+
+}
+
+
+
+.unlocked{
+
+    background:linear-gradient(
+        90deg,
+        #ffd700,
+        #ff9800
+    );
+
+
+    color:black;
+
+    box-shadow:
+    0 0 15px gold;
+
+
+    transform:scale(1.03);
+
+}
+
+
+
+
+body[darkmode="on"] .locked{
+
+    background:#111;
+
+}
+
+
+
+body[darkmode="on"] .achievement-container h2{
+
+    color:white;
+
+}
+
+
+
+
+/* Achievement Popup */
+
+
+#achievementPopup{
+
+
+position:fixed;
+
+top:30px;
+
+right:30px;
+
+
+background:#ffd700;
+
+color:black;
+
+
+padding:20px;
+
+border-radius:15px;
+
+
+font-size:18px;
+
+font-weight:bold;
+
+
+box-shadow:
+0 0 20px gold;
+
+
+opacity:0;
+
+
+transform:
+translateY(-50px);
+
+
+transition:.5s;
+
+
+z-index:9999;
+
+
+}
+
+
+
+#achievementPopup.show{
+
+
+opacity:1;
+
+
+transform:
+translateY(0);
+
+
+}
+
+
+.profile-achievements{
+
+    width:100%;
+
+    margin-top:30px;
+
+}
+
+
+.profile-achievement{
+
+    padding:12px;
+
+    margin:8px 0;
+
+    border-radius:10px;
+
+    background:#ddd;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    font-weight:bold;
+
+}
+
+
+.profile-achievement.unlocked{
+
+    background:linear-gradient(
+        90deg,
+        #ffd700,
+        #ff9800
+    );
+
+    color:black;
+
+}
+
+
+.profile-achievement.locked{
+
+    background:#555;
+
+    color:#aaa;
+
+}
+
+
+body[darkmode="on"] .profile-achievement.locked{
+
+    background:#111;
+
 }

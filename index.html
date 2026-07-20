@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Start Menu</title>    
-    <link rel="shortcut icon" href="/assets/icon-1976100_1920.png" type="image/x-icon">
+    <link rel="shortcut icon" href="home.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 <body darkmode="off">    
     <header>    
-        <h1 class="headline">Number-Guessing-Game</h1>     
+        <h1 class="headline">Number-Guessing-Game</h1>
+<a href="profile.html">
+<button>
+👤 Mein Profil
+</button>
+</a>
  
     </header>    
     <main>
@@ -18,21 +23,31 @@
             <h1 id="headline">Wähle ein Level</h1>
 
 
+
             <button id="lvl1-btn" onclick="navigateToLevel(1)">LVL 1(1-10 Tutorial)</button>
-            <button id="lvl2-btn" onclick="navigateToLevel(2)">LVL 2(1-100 Sehr einfach)</button>
+            <button id="lvl2-btn" onclick="navigateToLevel(2)">LVL 2(1-50 Einfach)</button>
+            <button id="lvl2-btn" onclick="navigateToLevel(3)">LVL 3(1-100 Mittel)</button>
+            <button id="lvl2-btn" onclick="navigateToLevel(4)">LVL 4(1-250 Schwer )</button>
+
+
+
+<p id="shareMessage"></p>
+
+    <a href="settings.html">
+        <img src="settings.png" alt="Einstellungs-Icon" id="settingsIcon" class="img">
+    </a>
+<p>Einstellungen</p>
 
 
         </section>
 
-        <section class="container"><a href="settings.html"><button><img src="/assets/settings-gear.svg" alt="Einstellungen"></button></a></section>
-
-
+  
 </section>
 
     </main>
 
     <footer>
-        <p>2013-2026 Ich halt!</p>
+        <p>Ich halt! </p>
     </footer>
 
     <!-- Loading Animation Overlay -->
@@ -42,5 +57,6 @@
     </div>
 
     <script src="script.js"></script>
+
 </body>
 </html>

@@ -20,58 +20,47 @@
 
 
 
-    <h1 class="headline">Number-Guessing-Game</h1>
+    <h1 class="headline"><a href="index.html">Number-Guessing-Game</a>/Lvl2</h1>
 
 
 
- 
-
-<!--
-
-        <select id="page-navigator" onchange="window.location.href=this.value;">
-  <option value="" disabled selected>Ziel auswählen...</option>
-  <option value="example.com">HTML Kurs</option>
-  <option value="example.com">CSS Kurs</option>
-  <option value="example.com">JavaScript Kurs</option>
-</select>
-
--->
 
     </header>
 
 
     <main>
  
-  
+   
 
 
 <section class="container">
 
-<h4>Lvl 2</h4>
+<h4>Lvl 2 (1-50 Einfach)</h4>
 
-     <h1 id="headline">Bitte rate die Zahl!</h1>
+        <h1 id="headline">Bitte rate die Zahl!</h1>
 
  <h2 id="displayTries">Versuche:0</h2>
+
+
+ <div id="guessHistoryContainer">
+    <h3>Bisherige Tipps</h3>
+    <p id="infoP" style="display: none;">Harter-Modus aktiviert(Rathystorie ausgeblendet), Schalte es in den Einstellungen unter Gameplay Einstellungen aus.</p>
+<ul id="guessHistory"></ul>
+</div>
 
  <form onsubmit="guessTheNumber();  return false">
 
  <input id="myNumber" type="number" required placeholder="Bitte Zahl eingeben">
 
- <button>Raten!</button>
+ <button id="guess">Raten!</button>
 
  </form>     
 
-</section>
+<a href="index.html"><button id="Aufgeben">Aufgeben!</button></a>
+<a href="index.html" style="display: none;" id="BackToStartmenu"><button >Zurück zum Startmenu</button></a>
 
-
-
-<section class="container">
-
-<a href="index.html"><button>Zurück zum Startmenü</button></a>
 
 </section>
-
-
 
     </main>
 

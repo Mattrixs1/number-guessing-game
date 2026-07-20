@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mein Profil</title>
+   <link rel="shortcut icon" href="home.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body darkmode="off">
+
+<header>
+
+<h1>
+    <a href="index.html">Number Guessing Game</a> / Profil
+
+
+
+</h1>
+
+</header>
+
+<main>
+
+<section class="container">
+
+<h2>Mein Profil</h2>
+
+<img
+id="profileImage"
+src="./assets/default-profile.png"
+alt="Profilbild"
+width="150"
+height="150"
+style="
+border-radius:50%;
+object-fit:cover;
+border:4px solid white;
+">
+
+<h2 id="username">
+Gast
+</h2>
+
+<p id="about">
+Noch keine Beschreibung.
+</p>
+
+
+
+<h3>Statistiken</h3>
+
+<p>⭐ Punkte:<span id="score">0</span></p>
+
+<p>🏆 Gewonnene Spiele:<span id="wins">0</span></p>
+
+<p>🎮 Gespielte Spiele:<span id="gamesPlayed">0</span></p>
+
+<p>🎯 Gesamte Tipps:<span id="totalGuesses">0</span></p>
+
+<p>📈 Siegquote:<span id="winRate">0%</span></p>
+
+<p>🎯 Höchstes Level:<span id="highestLevel">0</span></p>
+
+<p>📅 Registriert seit:<span id="joinDate">-</span></p>
+
+<p>🏅 Rang:<span id="rank">Anfänger</span></p>
+
+<br>
+
+<div onclick="shareProfile()"><img src="share.png" class="img"></div>
+<p>Profil teilen</p>
+
+<a href="profile-settings.html"><button>Profil bearbeiten</button></a>
+
+<a href="index.html"><button>Zurück zum Startmenu</button></a>
+
+</section>
+
+
+
+</main>
+
+<footer>
+
+<p>2013–2026 Ich halt!</p>
+
+</footer>
+
+<script src="script.js"></script>
+<script src="profile.js"></script>
+<script src="share-profile.js"></script>
+
+
+</body>
+</html>
